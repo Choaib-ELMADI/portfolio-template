@@ -1,0 +1,158 @@
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: fixed;
+    z-index: 2;
+}
+
+.app__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.app__navbar-logo img {
+    object-fit: cover;
+    width: 95px;
+    height: 40px;
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+}
+
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+    flex-direction: column;
+}
+.app__navbar-links li div {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.app__navbar-links li a {
+    color: var(--gray-color);
+    text-decoration: none;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 560;
+    transition: all 0s ease-in-out;
+}
+.app__navbar-links li a:hover {
+    color: var(--secondary-color);
+}
+.app__navbar-links li:hover div {
+    background: var(--secondary-color);
+}
+
+.app__navbar-menu {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-color);
+}
+.app__navbar-menu svg {
+    cursor: pointer;
+    width: 70%;
+    height: 70%;
+    color: var(--white-color);
+}
+.app__navbar-menu div{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    padding: 1rem;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    background: url('../../assets/bgWhite.png');
+    background-color: var(--white-color);
+    background-size: cover;
+    background-repeat: repeat;
+    box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+}
+.app__navbar-menu div svg {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    color: var(--secondary-color);
+    margin: 0.5rem 1rem;
+}
+.app__navbar-menu div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.app__navbar-menu div ul li {
+    margin: 1rem;
+}
+.app__navbar-menu div ul li a {
+    color: var(--gray-color);
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 560;
+    transition: all 0.2s ease-in-out;
+}
+.app__navbar-menu div ul li a:hover {
+    color: var(--secondary-color);
+}
+
+
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__navbar-logo img {
+        width: 180px;
+        height: 70px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .app__navbar-links {
+        display: none;
+    }
+    .app__navbar {
+        padding: 0.75rem 2rem;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .app__navbar-menu {
+        display: none;
+    }
+
+}

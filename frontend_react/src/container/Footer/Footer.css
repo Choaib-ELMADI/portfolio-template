@@ -1,0 +1,86 @@
+.app__footer {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+.app__footer-cards {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin: 2rem;
+}
+.app__footer-card {
+    min-width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #fef4f5;
+    transition: all 0.3s ease-in-out;
+}
+.app__footer-card:last-child {
+    background: #f2f7fb;
+}
+.app__footer-card img {
+    width: 40px;
+    height: 40px;
+    margin: 0 .75rem;
+}
+.app__footer-card a {
+    text-decoration: none;
+    font-weight: 500;
+}
+.app__footer-card:hover {
+    box-shadow: 0 0 25px #fef4f5;
+}
+
+
+.app__footer-form {
+    width: 60%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.app__footer-form div {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+.app__footer-form div input,
+.app__footer-form div textarea {
+    font-size: .9rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 0.5rem;
+    border: 0;
+    outline: none;
+    border-radius: 7px;
+    background: var(--primary-color);
+    font-family: var(--font-base);
+    color: var(--secondary-color);
+}
+.app__footer-form div textarea {
+    height: 130px;
+}
+.app__footer-form button {
+    padding: 0.6rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .app__footer-form {
+        width: 86%;
+    }
+}

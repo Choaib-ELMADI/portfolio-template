@@ -1,0 +1,130 @@
+.app__testimonial {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+.app__testimonial-item {
+    margin-top: 1rem;
+    width: auto;
+    min-width: 455px;
+    min-height: 220px;
+    background: var(--white-color);
+    display: flex;
+    gap: 3rem;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.app__testimonial-item img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+.app__testimonial-content {
+    flex: 1;
+    height: 100%;
+    padding: 0 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.app__testimonial-content p {
+    font-size: 1rem;
+    color: var(--black-color);
+    font-family: var(--font-base);
+}
+.app__testimonial-content h4 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}
+.app__testimonial-content h5 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--gray-color);
+    margin-top: 5px;
+}
+
+
+.app__testimonial-brands {
+    width: 80%;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+.app__testimonial-brands div {
+    width: 150px;
+    margin: 0.75rem 1rem;
+}
+.app__testimonial-brands div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: all .3s;
+}
+.app__testimonial-brands div img:hover {
+    filter: grayscale(0);
+}
+
+
+.app__testimonial-btns {
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.app__testimonial-btns div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--white-color);
+    margin: 0 .75rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.app__testimonial-btns div svg {
+    width: 26px;
+    height: 26px;
+    color: var(--secondary-color);
+    font-size: 5rem;
+}
+.app__testimonial-btns div:hover {
+    background: var(--secondary-color);
+}
+.app__testimonial-btns div:hover svg {
+    color: var(--white-color);
+}
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__testimonial-brands div {
+        width: 210px;
+        margin: 2rem;
+    }
+}
+@media screen and (max-width: 520px) {
+    .app__testimonial-item {
+        flex-direction: column;
+        min-width: 280px;
+        height: auto;
+        gap: 1rem;
+    }
+    .app__testimonial-content {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .app__testimonial-brands div {
+        width: 110px;
+        margin: 0.5rem;
+    }
+    .app__testimonial-content p,
+    .app__testimonial-content h4,
+    .app__testimonial-content h5 {
+        text-align: center;
+        margin: 0.25rem;
+    }
+}

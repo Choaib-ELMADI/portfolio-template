@@ -1,0 +1,207 @@
+#Home {
+    position: relative;
+    background: url('../../assets/bgIMG.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+#Home .app__wrapper {
+    padding: 0;
+}
+#Home .app__wrapper .copyright {
+    display: none;
+}
+
+
+.app__header {
+    flex: 1;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 6rem 2rem 0;
+}
+.app__header-solution {
+    width: auto;
+    display: flex;
+    gap: 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 3rem;
+}
+
+
+.app__header-info {
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+.app__header-badge {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.app__header-badge .badge-cmp,
+.app__header-badge .tag-cmp {
+    padding: 0.5rem 1rem;
+    border: var(--white-color);
+    border-radius: 15px;
+    flex-direction: row;
+    width: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.app__header-badge .tag-cmp {
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.app__header-badge .tag-cmp p {
+    width: 100%;
+    text-transform: capitalize;
+    text-align: left;
+}
+.app__header-badge span {
+    font-size: 2.5rem;
+}
+
+
+.app__header-circles {
+    flex: 0.95;
+    display: flex;
+    flex-direction: row;
+    margin-right: 3rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: auto;
+}
+.app__header-circles div {
+    margin: 1rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--white-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.app__header-circles div img {
+    width: 70%;
+    height: 70%;
+}
+.app__header-circles div:nth-child(2) {
+    width: 140px;
+    height: 140px;
+    margin: 3rem;
+}
+.app__header-circles div:nth-child(4) {
+    margin: 2rem;
+    width: 120px;
+    height: 120px;
+}
+
+
+.app__header-img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+@media screen and (min-width: 2000px) {
+    .app__header {
+        padding-top: 8rem;
+    }
+    .app__header-badge span {
+        font-size: 5rem;
+    }
+    .app__header-info {
+        width: 100%;
+        margin-right: 0rem;
+    }
+    .app__header-circles div:nth-child(2) {
+        width: 320px;
+        height: 320px;
+    }
+    .app__header-circles div:nth-child(4) {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .app__header-circles {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .app__header-solution {
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        height: auto;
+    }
+    .app__header-circles {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .app__header-circles div {
+        margin: 0rem;
+    }
+    .app__header-img {
+        margin-bottom: 2rem;
+    }
+    .app__header-circles div:nth-child(2),
+    .app__header-circles div:nth-child(4) {
+        margin: 1rem 2rem;
+    }
+    
+}
+@media screen and (max-width: 917px) {
+    .app__header-solution {
+        gap: 1rem;
+    }
+    .app__header {
+        flex-direction: column;
+    }
+    .app__header-img {
+        width: 280px;
+        height: 280px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .app__header-solution {
+        flex-direction: column;
+        align-items: center;
+    }
+    .app__header-badge {
+        margin-left: -8rem;
+    }
+    .app__header-circles {
+        flex: 1;
+        justify-content: center;
+    }
+    .app__header-img {
+        width: 240px;
+        height: 240px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .app__header {
+        padding: 6rem 1rem 2rem;
+    }
+
+}
